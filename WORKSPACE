@@ -1,5 +1,6 @@
-workspace(name = "scala_example")
+workspace(name = "design_patterns_cheat_sheet")
 
+# https://github.com/bazelbuild/rules_scala#getting-started
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 rules_scala_version="45fa926fb046eb46931b14e5f0fc7f684d4d17d9" # update this as needed
