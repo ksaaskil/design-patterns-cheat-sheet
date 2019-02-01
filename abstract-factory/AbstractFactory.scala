@@ -4,10 +4,10 @@ object AbstractFactory {
     val kemijarviPizzaPlace = new PizzaPlace(new KemijarviPizzaFactory)
 
     rovaniemiPizzaPlace.bakePizza()
-    rovaniemiPizzaPlace.baseCalzone()
+    rovaniemiPizzaPlace.bakeCalzone()
 
     kemijarviPizzaPlace.bakePizza()
-    kemijarviPizzaPlace.baseCalzone()
+    kemijarviPizzaPlace.bakeCalzone()
   }
 
   trait AbstractFactory {
@@ -50,7 +50,7 @@ object AbstractFactory {
       println(s"Baking pizza: ${factory.createPizza().description}")
     }
 
-    def baseCalzone() = {
+    def bakeCalzone() = {
       println(s"Baking calzone: ${factory.createCalzone().description}")
     }
 
