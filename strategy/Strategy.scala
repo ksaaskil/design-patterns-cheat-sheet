@@ -3,7 +3,7 @@ import WeekDay.WeekDay
 object VisitBarStrategy {
   def pick(weekDay: WeekDay): VisitBarStrategy = {
     weekDay match {
-      case WeekDay.Wednesday => VisitNightTrainStrategy
+      case WeekDay.Wednesday => VisitNiteTrainStrategy
       case WeekDay.Friday => VisitTivoliStrategy
       case _ => VisitRoyClubStrategy
     }
@@ -26,7 +26,7 @@ case object VisitTivoliStrategy extends VisitBarStrategy {
   }
 }
 
-case object VisitNightTrainStrategy extends VisitBarStrategy {
+case object VisitNiteTrainStrategy extends VisitBarStrategy {
   def visit(): Unit = {
     println("Spending very cheap night in Night Train!")
   }
