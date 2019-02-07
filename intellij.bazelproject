@@ -11,6 +11,7 @@ targets:
   # also explictly name targets so Run configurations will be generated for them
   //example-lib:test
   //abstract-factory:abstract-factory
+  //strategy:strategy
 
 
 
